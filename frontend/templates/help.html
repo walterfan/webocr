@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% import "_macros.html" as macros %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block page_content %}
+
+
+    <!-- content start -->
+
+    <div class="page-header">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<p>
+  It is a python web tool based on the OCR engine - libtesseract
+</p>
+  <pre>
+    # if you run it on a linux os
+    sudo apt install tesseract-ocr
+    sudo apt install libtesseract-dev
+
+    # set python environement
+    virtualenv -p python3 venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+
+    # start the web tool
+    ./start.sh
+  </pre>
+
+<ul>
+
+  <li>refer to <a href="https://github.com/tesseract-ocr/tesseract">tesseract library</a>
+  </li>
+
+</ul>
+
+
+</div> <!-- content end -->
+
+{% endblock %}
